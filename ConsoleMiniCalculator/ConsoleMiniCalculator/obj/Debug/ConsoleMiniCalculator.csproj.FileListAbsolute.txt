@@ -1,0 +1,7 @@
+C:\Users\admin\source\repos\ConsoleMiniCalculator\ConsoleMiniCalculator\bin\Debug\ConsoleMiniCalculator.exe.config
+C:\Users\admin\source\repos\ConsoleMiniCalculator\ConsoleMiniCalculator\bin\Debug\ConsoleMiniCalculator.exe
+C:\Users\admin\source\repos\ConsoleMiniCalculator\ConsoleMiniCalculator\bin\Debug\ConsoleMiniCalculator.pdb
+C:\Users\admin\source\repos\ConsoleMiniCalculator\ConsoleMiniCalculator\obj\Debug\ConsoleMiniCalculator.csprojResolveAssemblyReference.cache
+C:\Users\admin\source\repos\ConsoleMiniCalculator\ConsoleMiniCalculator\obj\Debug\ConsoleMiniCalculator.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\ConsoleMiniCalculator\ConsoleMiniCalculator\obj\Debug\ConsoleMiniCalculator.exe
+C:\Users\admin\source\repos\ConsoleMiniCalculator\ConsoleMiniCalculator\obj\Debug\ConsoleMiniCalculator.pdb
