@@ -1,0 +1,7 @@
+C:\Users\admin\source\repos\Tractor\Tractor\bin\Debug\Tractor.exe.config
+C:\Users\admin\source\repos\Tractor\Tractor\bin\Debug\Tractor.exe
+C:\Users\admin\source\repos\Tractor\Tractor\bin\Debug\Tractor.pdb
+C:\Users\admin\source\repos\Tractor\Tractor\obj\Debug\Tractor.csprojResolveAssemblyReference.cache
+C:\Users\admin\source\repos\Tractor\Tractor\obj\Debug\Tractor.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Tractor\Tractor\obj\Debug\Tractor.exe
+C:\Users\admin\source\repos\Tractor\Tractor\obj\Debug\Tractor.pdb
