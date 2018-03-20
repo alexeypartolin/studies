@@ -5,3 +5,10 @@ C:\Users\admin\source\repos\Tractor\Tractor\obj\Debug\Tractor.csprojResolveAssem
 C:\Users\admin\source\repos\Tractor\Tractor\obj\Debug\Tractor.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\Tractor\Tractor\obj\Debug\Tractor.exe
 C:\Users\admin\source\repos\Tractor\Tractor\obj\Debug\Tractor.pdb
+C:\Users\admin\Desktop\gitFolder\studies\Tractor\Tractor\bin\Debug\Tractor.exe.config
+C:\Users\admin\Desktop\gitFolder\studies\Tractor\Tractor\bin\Debug\Tractor.exe
+C:\Users\admin\Desktop\gitFolder\studies\Tractor\Tractor\bin\Debug\Tractor.pdb
+C:\Users\admin\Desktop\gitFolder\studies\Tractor\Tractor\obj\Debug\Tractor.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\gitFolder\studies\Tractor\Tractor\obj\Debug\Tractor.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\gitFolder\studies\Tractor\Tractor\obj\Debug\Tractor.exe
+C:\Users\admin\Desktop\gitFolder\studies\Tractor\Tractor\obj\Debug\Tractor.pdb

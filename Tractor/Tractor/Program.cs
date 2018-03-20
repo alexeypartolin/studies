@@ -16,7 +16,7 @@ namespace Tractor
         private double _fuelTank; // объем топливного бака 
         private double _fuelKm; // расход топлива на 1 киллометр
         private double _massInput; // Задаем ручками в консоле массу
-        private double _distanceInput;
+        private double _distanceInput; // Задаем ручками в консоле расстояние
 
 
         public double id
@@ -119,12 +119,12 @@ namespace Tractor
 
         public static void Input(Tractor ob)
         {
-            Console.WriteLine("Какую массу требуется поднять [в кг]?");
+            Console.WriteLine("Какую массу требуется перевезти [в тоннах]?");
             ob.massInput = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Какую дистанцию требуется преодолеть [в км]?");
             ob.distanceInput = Convert.ToDouble(Console.ReadLine());
             // Print
-            Console.WriteLine("Требуется перевезти " + ob.massInput + "кг" + " на " + ob.distanceInput + "км");
+            Console.WriteLine("Требуется перевезти " + ob.massInput + "(т)" + " на " + ob.distanceInput + "(км)");
         }
 
         // Метод сложения (суммирования) усилий
@@ -138,8 +138,8 @@ namespace Tractor
         {
             return (a.fuelTank / a.fuelKm);
         }
-        
 
+        
     }
 
     class Program
@@ -148,9 +148,9 @@ namespace Tractor
         {
             // Для конструктора:
             // id, масса которую может поднять тягач в тоннах, сила тяги (!)в тоннах (формальность), объем бака в литрах, расход/1км
-            Tractor t1 = new Tractor(1, 5000, 30, 500, 40);
-            Tractor t2 = new Tractor(2, 8000, 60, 650, 45);
-            Tractor t3 = new Tractor(3, 11000, 90, 800, 66);
+            Tractor t1 = new Tractor(1, 5000, 30, 500, 3.40);
+            Tractor t2 = new Tractor(2, 8000, 60, 750, 7.50);
+            Tractor t3 = new Tractor(3, 11000, 90, 1000, 12.70);
             // Создано три тягача
 
             // Формально
@@ -159,18 +159,58 @@ namespace Tractor
             Tractor.Input(forInput); // Ввод с клавиатуры
 
             double a = Tractor.Sum(t1,t2,t3);
-            Console.WriteLine("\nСуммарные усилия трех тягачей = " + a);
+            Console.WriteLine("\nСуммарные усилия трех тягачей = {0}(т)", a);
 
+
+
+            // Рассчитываем дальность поездки и округляем к наименьшему целому
             double distance1, distance2, distance3;
-            distance1 = Tractor.Distance(t1);
-            distance2 = Tractor.Distance(t2);
-            distance3 = Tractor.Distance(t3);
+            distance1 = Math.Floor(Tractor.Distance(t1));
+            distance2 = Math.Floor(Tractor.Distance(t2));
+            distance3 = Math.Floor(Tractor.Distance(t3));
+            
 
-            Console.WriteLine("\nДальность поездки для 1 тягача = {0}", distance1);
-            Console.WriteLine("Дальность поездки для 2 тягача = {0}", distance2);
-            Console.WriteLine("Дальность поездки для 3 тягача = {0}", distance3);
+            Console.WriteLine("\n1 тягач может проехать = {0}(км)", distance1);
+            Console.WriteLine("2 тягач может проехать = {0}(км)", distance2);
+            Console.WriteLine("3 тягач может проехать = {0}(км)", distance3);
 
+            double force1, force2, force3;
+            force1 = t1.force;
+            force2 = t2.force;
+            force3 = t3.force;
 
+            Console.WriteLine("Усилия 1 тягача = {0}(т)", force1);
+            Console.WriteLine("Усилия 2 тягача = {0}(т)", force2);
+            Console.WriteLine("Усилия 3 тягача = {0}(т)", force3);
+            // осталось определить, сколько нужно тягачей под заданные input данные 
+
+            // для 1 тягача
+            if (distance1 < forInput.distanceInput || force1 < forInput.massInput)
+            {
+                Console.WriteLine("Первый тягач не подходит");
+            }
+            else
+            {
+                Console.WriteLine("Первый тягач подходит");
+            }
+            // для 2 тягача
+            if (distance2 < forInput.distanceInput || force2 < forInput.massInput)
+            {
+                Console.WriteLine("Второй тягач не подходит");
+            }
+            else
+            {
+                Console.WriteLine("Второй тягач подходит");
+            }
+            // для 3 тягача 
+            if (distance3 < forInput.distanceInput || force3 < forInput.massInput)
+            {
+                Console.WriteLine("Третий тягач не подходит");
+            }
+            else
+            {
+                Console.WriteLine("Третий тягач подходит");
+            }
 
 
             Console.ReadKey();
