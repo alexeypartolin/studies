@@ -182,7 +182,6 @@ namespace Tractor
             Console.WriteLine("Усилия 1 тягача = {0}(т)", force1);
             Console.WriteLine("Усилия 2 тягача = {0}(т)", force2);
             Console.WriteLine("Усилия 3 тягача = {0}(т)", force3);
-            // осталось определить, сколько нужно тягачей под заданные input данные 
 
             // для 1 тягача
             if (distance1 < forInput.distanceInput || force1 < forInput.massInput)
@@ -211,6 +210,10 @@ namespace Tractor
             {
                 Console.WriteLine("Третий тягач подходит");
             }
+                
+            // Теперь определяем, СКОЛЬКО тягачей нужно
+
+
 
 
             Console.ReadKey();
